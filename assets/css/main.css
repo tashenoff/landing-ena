@@ -2,9 +2,22 @@ body {
     color: white;
 }
 
-
-.logo img{
+.logo img {
     width: 100%;
+}
+
+.statistic {
+    background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    position: relative;
+}
+
+.statistic::before {
+    content: '';
+    background-color: rgb(51 53 189 / 82%);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: absolute;
 }
 
 .home {
@@ -18,11 +31,10 @@ body {
 @media only screen and (max-width: 600px) {
     .home {
         background-position-y: center;
-    } 
     }
+}
 
-
-.home:before{
+.home:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -33,7 +45,13 @@ body {
     left: 0;
 }
 
-
+#myVideo>video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 #myVideo {
     position: absolute;
@@ -42,20 +60,23 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -20;
-  }
-
+    object-fit: cover;
+}
 
 .home__title {
     font-size: 50px;
     font-family: 'Russo One', sans-serif;
 }
 
+.banner__title {
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+}
 
 @media only screen and (max-width: 600px) {
-    .home__title{
-        font-size: 40px;
+    .home__title {
+        font-size: 30px;
     }
-
 }
 
 .home__sub-title {
@@ -66,16 +87,11 @@ body {
     font-family: 'Jura', sans-serif;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .home__sub-title{
+    .home__sub-title {
         font-size: 18px;
     }
-
 }
-
-
-
 
 .logo {
     font-family: 'Pattaya', sans-serif;
@@ -92,8 +108,7 @@ body {
     position: relative;
 }
 
-
-.title::before{
+.title::before {
     background-image: url('../img/right_border.svg');
     content: '';
     content: '';
@@ -106,17 +121,13 @@ body {
     top: 44%;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .title::before{
+    .title::before {
         display: none;
     }
-
 }
 
-
-
-.title::after{
+.title::after {
     background-image: url('../img/left_border.svg');
     content: '';
     content: '';
@@ -129,18 +140,13 @@ body {
     top: 44%;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .title::after{
+    .title::after {
         display: none;
     }
-
 }
 
-
-
-
-.bordered::before{
+.bordered::before {
     background-image: url('../img/left_border-b.svg');
     content: '';
     display: block;
@@ -152,8 +158,7 @@ body {
     top: 38%;
 }
 
-
-.bordered::after{
+.bordered::after {
     background-image: url('../img/right_border-b.svg');
     content: '';
     display: block;
@@ -165,18 +170,13 @@ body {
     top: 38%;
 }
 
-
-
-.map__badge{
+.map__badge {
     background-color: #BA0020;
-   
 }
 
-.map__text{
+.map__text {
     font-family: 'Pattaya', sans-serif;
 }
-
-
 
 .service__item {
     /* display: block; */
@@ -184,7 +184,6 @@ body {
     height: 300px;
     /* padding: 50px; */
     background-size: cover;
-    
 }
 
 .service__one {
@@ -207,7 +206,6 @@ body {
     background-image: url('../img/b-4.jpg');
 }
 
-
 .service__six {
     background-image: url('../img/b-5.jpg');
 }
@@ -220,32 +218,64 @@ body {
     background-image: url('../img/b-7.jpg');
 }
 
-
-.white_label{
+.white_label {
     background-color: #fff;
     font-size: 18px;
-
 }
-
 
 @media only screen and (max-width: 600px) {
-    .white_label{
+    .white_label {
         font-size: 14px;
     }
-
 }
 
-.btn-footer{
+.btn-footer {
     background: #FEFFC6;
 }
 
-
-footer{
+footer {
     height: 83px;
 }
 
-.img__work img{
-width: 100%;
+.img__work img {
+    width: 100%;
 }
 
+[x-cloak] {
+    display: none;
+}
 
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.scale-90 {
+    transform: scale(.9);
+}
+
+.scale-100 {
+    transform: scale(1);
+}
+
+.blue-bg {
+    background-image: url('../img/blue-bg.jpg');
+    position: relative;
+    overflow: hidden;
+}
+
+.blue-bg::after {
+    background-color: rgb(51 53 189 / 81%);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+}
