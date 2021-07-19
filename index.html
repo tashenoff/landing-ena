@@ -7,7 +7,9 @@
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
-    <title>Landing | Tailwind Starter Kit by Creative Tim</title>
+    <title>Yona | IT концерн
+        для уверенности в команде и свободы
+        реализации Digital проектов</title>
     <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,6 +53,12 @@
                             </div>
                         </div>
 
+                        <div class="lg:hidden block font-bold">
+
+
+                            <div>8775 533 1450</div>
+                        </div>
+
                         <!--Toggle button (hidden on large screens)-->
                         <button @click="isOpen = !isOpen" type="button"
                             class="block lg:hidden p-2 text-white hover:text-white focus:outline-none focus:text-white"
@@ -78,21 +86,21 @@
                             @click.away="isOpen = false" x-show.transition="true">
                             <ul class="pt-6 lg:pt-0 list-reset lg:flex items-center">
                                 <li class="mr-3">
-                                    <a class="inline-block py-2 px-2 text-white no-underline" href="#"
+                                    <a class="cursor-pointer inline-block py-2 px-2 text-white no-underline"
                                         @click="$scroll('#home'), isOpen = false">
                                         Главная</a>
                                     </a>
                                 </li>
                                 <li class="mr-3">
-                                    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
-                                        href="#" @click="$scroll('#about'), isOpen = false">
+                                    <a class="cursor-pointer inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
+                                        @click="$scroll('#about'), isOpen = false">
                                         О нас
                                     </a>
                                 </li>
 
                                 <li class="mr-3">
-                                    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
-                                        href="#" @click="$scroll('#product'), isOpen = false">Продукты
+                                    <a class="cursor-pointer inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
+                                        @click="$scroll('#product'), isOpen = false">Продукты
                                     </a>
                                 </li>
 
@@ -105,8 +113,8 @@
 
 
                                 <li class="mr-3 lg:mb-0 mb-5">
-                                    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
-                                        href="#" @click="$scroll('#contact'), isOpen = false">контакты
+                                    <a class="cursor-pointer inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
+                                        @click="$scroll('#contact'), isOpen = false">Контакты
                                     </a>
                                 </li>
 
@@ -129,7 +137,7 @@
                         <div class="flex items-center">
 
 
-                            <div>+7 (777) 000-00-00</div>
+                            <div>8775 533 1450</div>
                         </div>
                     </div>
                     <button @click="isDialogOpen = true"
@@ -144,7 +152,7 @@
                         <span>
                             Заказать звонок
                         </span>
-                        
+
 
                     </button>
                 </div>
@@ -165,7 +173,7 @@
         </div>
 
         <div class="arrow w-full absolute bottom-10 flex items-center justify-center">
-            <img x-data x-on:click="$scroll('#second')" class="relative z-50 cursor-pointer focus:animate-spin"
+            <img x-data x-on:click="$scroll('#about')" class="relative z-50 cursor-pointer focus:animate-spin"
                 src="./assets/img/arrow.svg" alt="">
 
         </div>
@@ -178,7 +186,7 @@
                 <div class="div flex  flex-col items-center justify-center">
                     <img class=" lg:mr-20" src="./assets/img/team.jpg" alt="">
                 </div>
-             
+
                 <div class="flex h-full w-full justify-items-center items-center">
                     <p class="">Надоело каждый день координировать действия разработчиков front end, back-end
                         и приложений. Постоянные нестыковки с базой данных и не получается интегрировать внешние
@@ -195,8 +203,8 @@
     <section class="my-20 text-black">
         <div class="container mx-auto">
             <div class="flex items-center lg:flex-row flex-col">
-          
-             
+
+
                 <div class="flex h-full w-full justify-items-center items-center  lg:order-first  order-last ">
                     <p class="">Больше нет необходимости создавать свои отделы программирования и следить за
                         выполнением. С проектом YONA Вы освободитесь от всех операционных процессов в сфере
@@ -226,25 +234,25 @@
 
         <div class="container mx-auto">
             <div class="grid lg:grid-cols-4 grid-cols-2 gap-4 text-red-500 py-20">
-                <div class="text-center flex flex-col justify-center items-center relative z-60">
+                <div class="text-center flex flex-col justify-center items-center relative z-50">
                     <img class="w-8 h-8 mb-10" src="./assets/img/icons/1.svg" alt="">
                     <span class="text-5xl">1250+</span>
                     <div class="uppercase mt-5 font-bold">грустных конкурентов</div>
                 </div>
 
-                <div class="text-center flex flex-col justify-center items-center relative z-60">
+                <div class="text-center flex flex-col justify-center items-center relative z-50">
                     <img class="w-10 h-8 mb-8" src="./assets/img/icons/2.svg" alt="">
                     <span class="text-5xl">926.854</span>
                     <div class="uppercase mt-5 font-bold">внесенных правок</div>
                 </div>
 
-                <div class="text-center lg:mt-0 mt-20 flex flex-col justify-center items-center relative z-60">
+                <div class="text-center lg:mt-0 mt-20 flex flex-col justify-center items-center relative z-50">
                     <img class="w-10 h-8 mb-8" src="./assets/img/icons/3.svg" alt="">
                     <span class="text-5xl">2.846</span>
                     <div class="uppercase mt-5 font-bold">часов без сна</div>
                 </div>
 
-                <div class="text-center lg:mt-0 mt-20 flex flex-col justify-center items-center relative z-60">
+                <div class="text-center lg:mt-0 mt-20 flex flex-col justify-center items-center relative z-50">
                     <img class="w-10 h-8 mb-8" src="./assets/img/icons/4.svg" alt="">
                     <span class="text-5xl">59</span>
                     <div class="uppercase mt-5 font-bold">чашек кофе в день</div>
@@ -257,7 +265,7 @@
 
     <section id='product'>
         <div class="container mx-auto">
-         
+
 
 
             <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
@@ -298,13 +306,16 @@
                         <div class="swiper-slide p-4">
                             <div class="flex flex-col rounded shadow overflow-hidden">
                                 <div class="flex-shrink-0">
-                                    <div class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
+                                    <div
+                                        class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
                                         <div class="z-60 relative  flex flex-col items-center">
-                                        <h1 class="text-lg mb-5">Интеграция платежных систем</h1>
-                                        <p class="text-sm text-center">Позволяет Вашим клиентам оплачивать товары/услуги
-                                            в любое время и с любой точки мира на Ваш корпоративный счет, благодаря чему
-                                            продажи компании в онлайн становятся бесперебойными.</p>
-                                            </div>
+                                            <h1 class="text-lg mb-5">Интеграция платежных систем</h1>
+                                            <p class="text-sm text-center">Позволяет Вашим клиентам оплачивать
+                                                товары/услуги
+                                                в любое время и с любой точки мира на Ваш корпоративный счет, благодаря
+                                                чему
+                                                продажи компании в онлайн становятся бесперебойными.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -313,31 +324,32 @@
                         <div class="swiper-slide p-4">
                             <div class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
                                 <div class="z-60 relative  flex flex-col items-center">
-                                <h1 class="text-lg mb-5">Работа с базой данных</h1>
-                                <p class="text-sm text-center ">Сбор и аналитика всей информации, которая облегчает и
-                                    улучшает работу компании, а также позволяет добиваться наилучших результатов
-                                    стабильности и безопасности.</p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="swiper-slide p-4">
-                            <div class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
-                                <div class="z-60 relative  flex flex-col items-center">
-                                <h1 class="text-lg mb-5">Разработка приложений на ReactJS</h1>
-                                <p class="text-sm text-center">Создаем уникальные, под специфику Вашей компании,
-                                    приложение, что поможет Вашим клиентам оставаться всегда на связи с Вами</p>
-                            </div>
+                                    <h1 class="text-lg mb-5">Работа с базой данных</h1>
+                                    <p class="text-sm text-center ">Сбор и аналитика всей информации, которая облегчает
+                                        и
+                                        улучшает работу компании, а также позволяет добиваться наилучших результатов
+                                        стабильности и безопасности.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide p-4">
                             <div class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
                                 <div class="z-60 relative  flex flex-col items-center">
-                                <h1 class="text-lg mb-5">Проектирование BackEnd приложений</h1>
-                                <p class="text-sm text-center">Улучшение и доработка существующего Программного
-                                    Обеспечения в самые кратчайшие сроки.</p>
-                                    </div>
+                                    <h1 class="text-lg mb-5">Разработка приложений на ReactJS</h1>
+                                    <p class="text-sm text-center">Создаем уникальные, под специфику Вашей компании,
+                                        приложение, что поможет Вашим клиентам оставаться всегда на связи с Вами</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide p-4">
+                            <div class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
+                                <div class="z-60 relative  flex flex-col items-center">
+                                    <h1 class="text-lg mb-5">Проектирование BackEnd приложений</h1>
+                                    <p class="text-sm text-center">Улучшение и доработка существующего Программного
+                                        Обеспечения в самые кратчайшие сроки.</p>
+                                </div>
                             </div>
                         </div>
 
@@ -346,10 +358,10 @@
                         <div class="swiper-slide p-4">
                             <div class="h-48 w-full bg-primary flex flex-col items-center justify-center p-5 blue-bg">
                                 <div class="z-60 relative  flex flex-col items-center">
-                                <h1 class="text-lg mb-5">Интеграция, написание собственного API</h1>
-                                <p class="text-sm text-center">Внедрение и создание индивидуальных API интеграций на
-                                    различные платформы под уникальные задачи Digital проектов.</p>
-                                    </div>
+                                    <h1 class="text-lg mb-5">Интеграция, написание собственного API</h1>
+                                    <p class="text-sm text-center">Внедрение и создание индивидуальных API интеграций на
+                                        различные платформы под уникальные задачи Digital проектов.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -499,7 +511,7 @@
 
 
                             <div
-                                class="p-5 lg:col-span-2 w-full h-80 lg:border-b  lg:border-r lg:border-l lg:border-t border-black border-opacity-20 flex flex-col items-center">
+                                class="p-5  w-full h-80 lg:border-b  lg:border-r lg:border-l lg:border-t border-black border-opacity-20 flex flex-col items-center">
                                 <img class="h-10 w-10" src="./assets//img/icons/11.svg" alt="">
                                 <h1 class="uppercase font-bold mt-10 mb-5">Разработка базовой логики и алгоритмов работы
                                     приложения; <br>тестирование и отладка приложения a также отдельных компонентов</h1>
@@ -509,6 +521,16 @@
                                     Неотъемлемый процесс создания приложения—это тестирование и отладка, данный процесс
                                     реализуем и в том случае если у вас уже есть приложение, мы предлагаем услуги
                                     тестирования на исправность всех функций.</p>
+                            </div>
+
+
+                            <div
+                                class="p-5  w-full h-80 lg:border-b  lg:border-r lg:border-t border-black border-opacity-20 flex flex-col items-center">
+                                <img class="h-10 w-10" src="./assets//img/icons/15.svg" alt="">
+                                <h1 class="uppercase font-bold mt-10 mb-5">Разработка CRM</h1>
+                                <p>Ни одна готовая CRM не может отвечать всем потребностям вашей отрасли. Под ваши
+                                    требования можно разработать абсолютно уникальный продукт с собственным дизайном,
+                                    справочниками и практически любым функционалом.</p>
                             </div>
 
 
@@ -539,7 +561,7 @@
             <div class="grid lg:grid-cols-5 grid-cols-1 gap-0">
                 <div class="flex flex-col items-center text-center bg-primary relative p-5">
                     <span
-                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5">1</span>
+                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5 text-black">1</span>
                     <span class="mt-5">шаг</span>
                     <h1 class="my-5 uppercase">Получение тех задания</h1>
                     <!-- <p>Поверьте отправить тех.задание будет самым сложным из того что вам придется делать во время
@@ -550,7 +572,7 @@
 
                 <div class="flex flex-col items-center text-center bg-primary bg-opacity-75 p-5 relative">
                     <span
-                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5">1</span>
+                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5 text-black">2</span>
                     <span class="mt-5">шаг</span>
                     <h1 class="my-5 uppercase">Разработка</h1>
                     <!-- <p>Полностью курируемый и исполняемый командой Yona этап, при котором вас никто не будет беспокоить.
@@ -561,7 +583,7 @@
 
                 <div class="flex flex-col items-center text-center bg-primary p-5 relative">
                     <span
-                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5">1</span>
+                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5 text-black">3</span>
                     <span class="mt-5">шаг</span>
                     <h1 class="my-5 uppercase">Интеграция и Тестирование</h1>
                     <!-- <p>И снова, процесс не требующий вашего вмешательства. Проверка исправности отдельных компонентов
@@ -574,7 +596,7 @@
 
                 <div class="flex flex-col items-center text-center p-5 bg-primary bg-opacity-75 relative">
                     <span
-                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5">1</span>
+                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5 text-black">4</span>
                     <span class="mt-5">шаг</span>
                     <h1 class="my-5 uppercase">Обратная связь и правки</h1>
                     <!-- <p>Второй и последний этап требующий вашего вовлечения в процесс создания финального продукта.
@@ -586,7 +608,7 @@
 
                 <div class="flex flex-col items-center text-center p-5 bg-primary relative">
                     <span
-                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5">1</span>
+                        class="bg-green p-5 h-10 w-10 rounded-full flex items-center justify-center absolute -top-5 text-black">5</span>
                     <span class="mt-5">шаг</span>
                     <h1 class="my-5 uppercase">Релиз</h1>
                     <!-- <p>Осталось лишь анонсировать запуск сайта или приложения и наслаждаться результатом.</p> -->
@@ -604,62 +626,62 @@
     <section id="contact" class="statistic">
         <div class="container mx-auto p-20">
             <div
-                class="flex items-center justify-center relative z-60 flex flex-col items-center justify-center text-center">
+                class="flex items-center justify-center relative z-50 flex flex-col items-center justify-center text-center">
                 <img class="w-10 h-10" src="./assets/img/icons/12.svg" alt="">
                 <h1 class="lg:text-4xl text-3x1 banner__title my-10"> Отправьте техническое задание (backup log)<br> и
                     получите 20% <br>на первые два заказа.</h1>
                 <button @click="isDialogOpen = true"
                     class="py-2 px-5 bg-green mt-5 focus:outline-none rounded-full text-black font-bold uppercase">Оставить
                     заявку</button>
-                
+
             </div>
         </div>
 
     </section>
 
 
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d372.17967495704266!2d71.41284549249087!3d51.13213830956582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245869ead690463%3A0xf7a9a693fa3800c5!2z0L_RgNC-0YHQvy4g0JrQsNCx0LDQvdCx0LDQuSDQkdCw0YLRi9GA0LAgMTksINCd0YPRgC3QodGD0LvRgtCw0L0gMDIwMDAw!5e0!3m2!1sru!2skz!4v1626629184391!5m2!1sru!2skz"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
 
-  <!-- overlay -->
-  <div
-  class="overflow-auto"
-  style="background-color: rgba(0,0,0,0.5)"
-  x-show="isDialogOpen"
-  :class="{ 'fixed inset-0 z-60  flex items-start justify-center': isDialogOpen }"
->
-<!-- dialog -->
-<div
-     class="bg-white shadow-2xl m-4 sm:m-8 text-black"
-     x-show="isDialogOpen"
-     @click.away="isDialogOpen = false"
->
-    <div class="flex justify-between items-center border-b p-2 text-xl">
-        <h6 class="text-xl font-bold">Свяжитесь с нами</h6>
-        <button type="button" @click="isDialogOpen = false">✖</button>
-    </div>
-    <div class="">
-        <!-- content -->
-    
-      
-       
-        <form class="flex flex-col w-full p-10  text-black" action="">
-            <label for="">Ваше имя</label>
-            <input class="border border-black border-opacity-20 py-2 px-6 rounded-full mb-5 focus:outline-none" type="text">
-            <label for="">Номер телефона</label>
-            <input class="border border-black border-opacity-20 py-2 px-6 rounded-full focus:outline-none" type="number">
-            <button class=" w-full focus:outline-none py-2 px-6 bg-green text-black rounded-full mt-10 uppercase text-sm tracking-wide font-bold hover:bg-green-400 cursor-pointer transition ">
-                оставить заявку</button>
-        </form>
-   
-        
-    
-     
-    </div>
-</div><!-- /dialog -->
-</div><!-- /overlay -->
+    <!-- overlay -->
+    <div class="overflow-auto" style="background-color: rgba(0,0,0,0.5)" x-show="isDialogOpen"
+        :class="{ 'fixed inset-0 z-60  flex items-start justify-center': isDialogOpen }">
+        <!-- dialog -->
+        <div class="bg-white shadow-2xl m-4 sm:m-8 text-black" x-show="isDialogOpen" @click.away="isDialogOpen = false">
+            <div class="flex justify-between items-center border-b p-2 text-xl">
+                <h6 class="text-xl font-bold">Свяжитесь с нами</h6>
+                <button type="button" @click="isDialogOpen = false">✖</button>
+            </div>
+            <div class="">
+                <!-- content -->
 
 
-  
+
+                <form class="flex flex-col w-full p-10  text-black" action="">
+                    <label for="">Ваше имя</label>
+                    <input class="border border-black border-opacity-20 py-2 px-6 rounded-full mb-5 focus:outline-none"
+                        type="text">
+                    <label for="">Номер телефона</label>
+                    <input class="border border-black border-opacity-20 py-2 px-6 rounded-full focus:outline-none"
+                        type="number">
+                    <button
+                        class=" w-full focus:outline-none py-2 px-6 bg-green text-black rounded-full mt-10 uppercase text-sm tracking-wide font-bold hover:bg-green-400 cursor-pointer transition ">
+                        оставить заявку</button>
+                </form>
+
+
+
+
+            </div>
+        </div><!-- /dialog -->
+    </div><!-- /overlay -->
+
+
+
     <footer class="bg-primary flex items-center justify-center">
         <span class="uppercase tracking-widest">yona.kz все права защищены</span>
     </footer>
